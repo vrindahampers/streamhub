@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - StreamHub</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="bgAnimation" class="bg-animation"></div>
+
+  <header class="header" id="header">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo">🎬 StreamHub</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="admin.html" class="active">Admin</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="index.html" class="icon-btn" title="Back to Site">🏠</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="page-title">📝 Movie Manager</h1>
+      
+      <div class="admin-container">
+        <!-- Add/Edit Form -->
+        <div class="admin-form-section">
+          <h2 id="formTitle">Add New Movie</h2>
+          <form id="movieForm" class="movie-form">
+            <input type="hidden" id="movieId" value="">
+
+            <div class="form-group">
+              <label for="title">Title *</label>
+              <input type="text" id="title" required placeholder="Enter movie title" />
+            </div>
+
+            <div class="form-group">
+              <label for="originalTitle">Original Title</label>
+              <input type="text" id="originalTitle" placeholder="Original title (if different)" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="year">Year *</label>
+                <input type="number" id="year" required placeholder="2024" min="1900" max="2030" />
+              </div>
+
+              <div class="form-group">
+                <label for="quality">Quality *</label>
+                <select id="quality" required>
+                  <option value="">Select Quality</option>
+                  <option value="4K">4K Ultra HD</option>
+                  <option value="1080P">1080P Full HD</option>
+                  <option value="720P">720P HD</option>
+                  <option value="480P">480P</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="runtime">Runtime (min)</label>
+                <input type="number" id="runtime" placeholder="120" min="1" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="rating">Rating *</label>
+                <input type="number" id="rating" required placeholder="4.5" min="0" max="5" step="0.1" />
+              </div>
+
+              <div class="form-group">
+                <label for="language">Language *</label>
+                <input type="text" id="language" required placeholder="English, Hindi, etc." />
+              </div>
+
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" placeholder="USA, India, etc." />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="director">Director *</label>
+              <input type="text" id="director" required placeholder="Director name" />
+            </div>
+
+            <div class="form-group">
+              <label for="writer">Writer</label>
+              <input type="text" id="writer" placeholder="Writer name" />
+            </div>
+
+            <div class="form-group">
+              <label for="cast">Cast (comma separated)</label>
+              <textarea id="cast" rows="2" placeholder="Actor 1, Actor 2, Actor 3"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="genres">Genres (comma separated) *</label>
+              <input type="text" id="genres" required placeholder="Action, Drama, Thriller" />
+            </div>
+
+            <div class="form-group">
+              <label for="story">Story/Description *</label>
+              <textarea id="story" rows="4" required placeholder="Movie storyline..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="poster">Poster URL</label>
+              <input type="url" id="poster" placeholder="https://example.com/poster.jpg" />
+            </div>
+
+            <div class="form-group">
+              <label for="banner">Banner URL</label>
+              <input type="url" id="banner" placeholder="https://example.com/banner.jpg" />
+            </div>
+
+            <div class="form-group">
+              <label for="thumbnail">Thumbnail URL</label>
+              <input type="url" id="thumbnail" placeholder="https://example.com/thumb.jpg" />
+            </div>
+
+            <div class="form-group">
+              <label for="screenshots">Screenshots (comma separated URLs)</label>
+              <textarea id="screenshots" rows="2" placeholder="https://example.com/ss1.jpg, https://example.com/ss2.jpg"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="driveLink">Google Drive Link *</label>
+              <input type="url" id="driveLink" required placeholder="https://drive.google.com/file/d/..." />
+            </div>
+
+            <div class="form-group">
+              <label for="trailerURL">Trailer URL (YouTube)</label>
+              <input type="url" id="trailerURL" placeholder="https://www.youtube.com/watch?v=..." />
+            </div>
+
+            <div class="form-group">
+              <label for="production">Production</label>
+              <input type="text" id="production" placeholder="Netflix, Disney, etc." />
+            </div>
+
+            <div class="form-group">
+              <label for="imdbId">IMDB ID</label>
+              <input type="text" id="imdbId" placeholder="tt1234567" />
+            </div>
+
+            <div class="form-group">
+              <label for="tmdbId">TMDB ID</label>
+              <input type="number" id="tmdbId" placeholder="123456" />
+            </div>
+
+            <div class="form-group">
+              <label for="releaseDate">Release Date</label>
+              <input type="date" id="releaseDate" />
+            </div>
+
+            <div class="form-group">
+              <label for="seoKeywords">SEO Keywords</label>
+              <input type="text" id="seoKeywords" placeholder="movie, action, 2024" />
+            </div>
+
+            <div class="form-group">
+              <label for="tags">Tags (comma separated)</label>
+              <input type="text" id="tags" placeholder="trending, popular, new" />
+            </div>
+
+            <div class="form-group">
+              <label for="downloads">Downloads (JSON format)</label>
+              <textarea id="downloads" rows="2" placeholder='[{"label": "1080P", "url": "#"}]'></textarea>
+            </div>
+
+            <div class="form-section">
+              <h3>Visibility & Categories</h3>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="isFeatured" />
+                  <span>Featured</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="isTrending" />
+                  <span>Trending</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="isPopular" />
+                  <span>Popular</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="isNewRelease" />
+                  <span>New Release</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="isTopRated" />
+                  <span>Top Rated</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="isRecommended" />
+                  <span>Recommended</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="hideMovie" />
+                  <span>Hide Movie</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="comingSoon" />
+                  <span>Coming Soon</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="premiumOnly" />
+                  <span>Premium Only</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="views">Views Count</label>
+              <input type="number" id="views" placeholder="0" min="0" />
+            </div>
+
+            <div class="form-group">
+              <label for="downloadsCount">Downloads Count</label>
+              <input type="number" id="downloadsCount" placeholder="0" min="0" />
+            </div>
+
+            <div class="form-group">
+              <label for="related">Related Movie IDs (comma separated)</label>
+              <input type="text" id="related" placeholder="1, 2, 3" />
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">💾 Save Movie</button>
+              <button type="button" id="resetBtn" class="btn btn-secondary">🔄 Reset Form</button>
+              <button type="button" id="generateJsonBtn" class="btn btn-secondary">📄 Generate JSON</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- JSON Output -->
+        <div class="admin-json-section">
+          <h2>Generated JSON</h2>
+          <textarea id="jsonOutput" readonly class="json-output"></textarea>
+          <button id="copyJsonBtn" class="btn btn-secondary">📋 Copy JSON</button>
+          <button id="downloadJsonBtn" class="btn btn-primary">💾 Download movies.json</button>
+          
+          <h3>Current Movies Count: <span id="movieCount">0</span></h3>
+        </div>
+      </div>
+
+      <!-- Movie List -->
+      <div class="movie-list-section">
+        <h2>All Movies</h2>
+        <div id="adminMovieList" class="admin-movie-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>🎬 StreamHub Admin</h4>
+          <p style="color: var(--text-secondary);">Manage your movie database with ease.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">View Site</a></li>
+            <li><a href="#formTitle">Add Movie</a></li>
+            <li><a href="#adminMovieList">Movie List</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2026 StreamHub Admin Panel. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

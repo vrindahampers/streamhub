@@ -1,0 +1,45 @@
+{
+  "featuredMovie": {
+    "id": 1
+  },
+  "topMovies": [1, 2],
+  "trendingMovies": [1, 2],
+  "newReleases": [1],
+  "popularMovies": [1, 2],
+  "topRated": [2],
+  "recentlyAdded": [2, 1],
+  "heroSettings": {
+    "autoPlay": false,
+    "showInfo": true,
+    "enableParallax": true
+  },
+  "playerSettings": {
+    "defaultQuality": "auto",
+    "autoplay": false,
+    "showSkipButtons": true,
+    "rememberPosition": true,
+    "defaultSpeed": 1,
+    "volumeBoost": true,
+    "maxVolume": 200,
+    "voiceControl": true,
+    "keyboardShortcuts": true
+  },
+  "siteSettings": {
+    "siteName": "StreamHub",
+    "siteDescription": "Premium movie streaming platform",
+    "allowDownload": true,
+    "allowWatchlist": true,
+    "allowSearch": true,
+    "allowShare": true,
+    "itemsPerPage": 20,
+    "enableLazyLoad": true,
+    "enableSkeleton": true,
+    "defaultTheme": "dark",
+    "allowThemeToggle": true
+  },
+  "seoSettings": {
+    "keywords": ["streaming", "movies", "watch online", "4k", "hdr"],
+    "author": "StreamHub",
+    "robots": "index, follow"
+  }
+}

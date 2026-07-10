@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streaming - StreamHub</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="keywords" content="streaming, watch, movie, online">
+  <meta name="description" content="Watch movies online">
+</head>
+<body>
+  <div id="bgAnimation" class="bg-animation"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo">🎬 StreamHub</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="steam.html">Movies</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="index.html" class="icon-btn" title="Back to Home">🏠</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Movie Player Section -->
+  <section class="section player-section">
+    <div class="container">
+      <a href="index.html" class="back-button">← Back to Movies</a>
+
+      <div class="player-header">
+        <h1 id="playerMovieTitle">Loading...</h1>
+        <p id="playerMovieMeta" class="movie-meta"></p>
+      </div>
+
+      <div class="player-container">
+        <div class="video-wrapper">
+          <div id="loadingSpinner" class="loading-spinner">
+            <div class="spinner"></div>
+          </div>
+          <iframe id="drivePlayer" 
+                  style="display:none;" 
+                  allowfullscreen 
+                  allow="autoplay; encrypted-media">
+          </iframe>
+          <video id="mainPlayer" 
+                 controls 
+                 style="display:none;"
+                 playsinline>
+          </video>
+        </div>
+
+        <div class="player-info">
+          <div class="movie-details-card">
+            <img id="playerPoster" src="" alt="Poster" class="player-poster" />
+            <div class="player-details">
+              <h2 id="playerTitle">Movie Title</h2>
+              <p id="playerStory" class="story"></p>
+              <div class="meta-tags">
+                <span id="playerYear" class="tag"></span>
+                <span id="playerQuality" class="tag quality"></span>
+                <span id="playerRuntime" class="tag"></span>
+                <span id="playerRating" class="tag rating"></span>
+                <span id="playerLanguage" class="tag"></span>
+              </div>
+              <div class="info-grid">
+                <div><strong>Director:</strong> <span id="playerDirector"></span></div>
+                <div><strong>Genres:</strong> <span id="playerGenres"></span></div>
+                <div><strong>Cast:</strong> <span id="playerCast"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="stream.js"></script>
+</body>
+</html>

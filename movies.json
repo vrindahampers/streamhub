@@ -9,10 +9,18 @@
       "quality": "1080P",
       "runtime": "114",
       "rating": "4.8",
-      "genres": ["Romance", "Drama", "Crime"],
+      "genres": [
+        "Romance",
+        "Drama",
+        "Crime"
+      ],
       "director": "Barbara Bialowas",
       "writer": "Tomasz Klimala",
-      "cast": ["Anna Maria Sieklucka", "Michele Morrone", "Otar Saralidze"],
+      "cast": [
+        "Anna Maria Sieklucka",
+        "Michele Morrone",
+        "Otar Saralidze"
+      ],
       "story": "A woman falls in love with a mafia boss who gives her 365 days to fall in love with him.",
       "poster": "https://image.tmdb.org/t/p/w500/6M7HWHT8kAxQQwXkbnImkgV5yZA.jpg",
       "banner": "https://image.tmdb.org/t/p/original/7RtcSgWph37pFPbxXuIty7gWJ3y.jpg",
@@ -25,17 +33,29 @@
       "telegramLink": "",
       "streamingLink": "",
       "downloads": [
-        { "label": "1080P WEB-DL", "url": "#" },
-        { "label": "720P BluRay", "url": "#" }
+        {
+          "label": "1080P WEB-DL",
+          "url": "#"
+        },
+        {
+          "label": "720P BluRay",
+          "url": "#"
+        }
       ],
       "downloadCount": 3420,
       "sources": [],
       "trailerURL": "",
       "externalSubtitle": "",
       "internalSubtitle": "",
-      "tags": ["romance", "mature"],
+      "tags": [
+        "romance",
+        "mature"
+      ],
       "seoKeywords": "365 days movie, polish romance",
-      "related": [2, 3],
+      "related": [
+        2,
+        3
+      ],
       "isFeatured": true,
       "isTrending": true,
       "isRecommended": true,
@@ -53,76 +73,74 @@
       "tmdbId": "592458"
     },
     {
-    
-  "id": 2,
-  "title": "Hacked (2020) Hindi HD .mp4",
-  "originalTitle": "Hacked",
-  "year": "2020",
-  "language": "Hindi",
-  "quality": "1080P",
-  "runtime": "120",
-  "rating": 4.9,
-  "genres": [
-    "Thriller",
-    "Drama"
-  ],
-  "director": "Vikram Bhatt",
-  "writer": "Vikram Bhatt",
-  "cast": [
-    "Hina Khan",
-    "Rohan Shah",
-    "Manissha Lamba"
-  ],
-  "story": "A psychological thriller about a girl who falls prey to a cybercrime.",
-  "poster": "https://image.tmdb.org/t/p/w500/qflbYbfYmkTzZVNMgYLjqQMMBfL.jpg",
-  "banner": "https://image.tmdb.org/t/p/original/9S26x3IDH3ZGNnmcWjGpMLqNHQy.jpg",
-  "thumbnail": "https://image.tmdb.org/t/p/w500/qflbYbfYmkTzZVNMgYLjqQMMBfL.jpg",
-  "screenshots": [
-    "https://image.tmdb.org/t/p/original/9S26x3IDH3ZGNnmcWjGpMLqNHQy.jpg"
-  ],
-  "driveLink": "https://drive.google.com/file/d/1E0O_tg0SO1_rkQCxb781-gaFWeoVUm1A/view?usp=sharing",
-  "telegramLink": "",
-  "streamingLink": "",
-  "downloads": [
-    {
-      "label": "4K HDR",
-      "url": "#"
-    },
-    {
-      "label": "1080P",
-      "url": "#"
-    }
-  ],
-  "downloadCount": 5890,
-  "sources": [],
-  "trailerURL": "",
-  "externalSubtitle": "",
-  "internalSubtitle": "",
-  "tags": [
-    "documentary",
-    "basketball",
-    "sports"
-  ],
-  "seoKeywords": "the last dance, michael jordan, chicago bulls",
-  "related": [
-    1
-  ],
-  "isFeatured": false,
-  "isTrending": true,
-  "isPopular": true,
-  "isNewRelease": false,
-  "isTopRated": true,
-  "isRecommended": false,
-  "hideMovie": false,
-  "comingSoon": false,
-  "premiumOnly": false,
-  "views": 28950,
-  "country": "United States",
-  "releaseDate": "2020-04-19",
-  "production": "ESPN",
-  "imdbId": "tt10911033",
-  "tmdbId": 105377
-
+      "id": 2,
+      "title": "Hacked (2020) Hindi HD .mp4",
+      "originalTitle": "Hacked",
+      "year": "2020",
+      "language": "Hindi",
+      "quality": "1080P",
+      "runtime": "120",
+      "rating": 4.9,
+      "genres": [
+        "Thriller",
+        "Drama"
+      ],
+      "director": "Vikram Bhatt",
+      "writer": "Vikram Bhatt",
+      "cast": [
+        "Hina Khan",
+        "Rohan Shah",
+        "Manissha Lamba"
+      ],
+      "story": "A psychological thriller about a girl who falls prey to a cybercrime.",
+      "poster": "https://image.tmdb.org/t/p/w500/qflbYbfYmkTzZVNMgYLjqQMMBfL.jpg",
+      "banner": "https://image.tmdb.org/t/p/original/9S26x3IDH3ZGNnmcWjGpMLqNHQy.jpg",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/qflbYbfYmkTzZVNMgYLjqQMMBfL.jpg",
+      "screenshots": [
+        "https://image.tmdb.org/t/p/original/9S26x3IDH3ZGNnmcWjGpMLqNHQy.jpg"
+      ],
+      "driveLink": "https://drive.google.com/file/d/1E0O_tg0SO1_rkQCxb781-gaFWeoVUm1A/view?usp=sharing",
+      "telegramLink": "",
+      "streamingLink": "",
+      "downloads": [
+        {
+          "label": "4K HDR",
+          "url": "#"
+        },
+        {
+          "label": "1080P",
+          "url": "#"
+        }
+      ],
+      "downloadCount": 5890,
+      "sources": [],
+      "trailerURL": "",
+      "externalSubtitle": "",
+      "internalSubtitle": "",
+      "tags": [
+        "documentary",
+        "basketball",
+        "sports"
+      ],
+      "seoKeywords": "the last dance, michael jordan, chicago bulls",
+      "related": [
+        1
+      ],
+      "isFeatured": false,
+      "isTrending": true,
+      "isPopular": true,
+      "isNewRelease": false,
+      "isTopRated": true,
+      "isRecommended": false,
+      "hideMovie": false,
+      "comingSoon": false,
+      "premiumOnly": false,
+      "views": 28950,
+      "country": "United States",
+      "releaseDate": "2020-04-19",
+      "production": "ESPN",
+      "imdbId": "tt10911033",
+      "tmdbId": 105377
     },
     {
       "id": 3,
@@ -132,11 +150,18 @@
       "language": "Hindi",
       "quality": "1080P",
       "runtime": "120",
-      "rating": "4.7",
-      "genres": ["Drama", "Romance"],
+      "rating": 4.7,
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
       "director": "Director Name",
       "writer": "Writer Name",
-      "cast": ["Actor 1", "Actor 2", "Actor 3"],
+      "cast": [
+        "Actor 1",
+        "Actor 2",
+        "Actor 3"
+      ],
       "story": "A story about Pritum and Petro. Add your movie link and details here.",
       "poster": "https://image.tmdb.org/t/p/w500/edv5CZcWroW1x8W7gRceiyjhSf.jpg",
       "banner": "https://image.tmdb.org/t/p/original/orZ84yF1HpjCyDP1LaUnDgQvgO.jpg",
@@ -145,28 +170,44 @@
         "https://image.tmdb.org/t/p/original/orZ84yF1HpjCyDP1LaUnDgQvgO.jpg",
         "https://image.tmdb.org/t/p/original/edv5CZcWroW1x8W7gRceiyjhSf.jpg"
       ],
-      "driveLink": "",
+      "driveLink": "https://drive.google.com/file/d/1CP-Js7N1eh6d0c8d-AAz3Ax5dzKynr8k/view?usp=sharing",
       "telegramLink": "",
       "streamingLink": "",
       "downloads": [
-        { "label": "4K HDR", "url": "#" },
-        { "label": "1080P", "url": "#" },
-        { "label": "720P", "url": "#" }
+        {
+          "label": "4K HDR",
+          "url": "#"
+        },
+        {
+          "label": "1080P",
+          "url": "#"
+        },
+        {
+          "label": "720P",
+          "url": "#"
+        }
       ],
       "downloadCount": 8920,
       "sources": [],
       "trailerURL": "https://www.youtube.com/watch?v=YoHD9XEInc0",
       "externalSubtitle": "",
       "internalSubtitle": "",
-      "tags": ["sci-fi", "mind-bending", "action"],
+      "tags": [
+        "sci-fi",
+        "mind-bending",
+        "action"
+      ],
       "seoKeywords": "inception, leonardo dicaprio, christopher nolan",
-      "related": [1, 2],
+      "related": [
+        1,
+        2
+      ],
       "isFeatured": true,
       "isTrending": true,
-      "isRecommended": true,
       "isPopular": true,
       "isNewRelease": false,
       "isTopRated": true,
+      "isRecommended": true,
       "hideMovie": false,
       "comingSoon": false,
       "premiumOnly": false,
@@ -175,10 +216,10 @@
       "releaseDate": "2010-07-16",
       "production": "Warner Bros",
       "imdbId": "tt1375666",
-      "tmdbId": "27205"
+      "tmdbId": 27205
     }
   ],
-  "featured": 1,
+  "featured": 3,
   "settings": {
     "allowDownload": true,
     "showDownloads": true,

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamHub - Watch Movies Online</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="keywords" content="streaming, movies, watch online, 4k, hdr">
+  <meta name="description" content="Premium movie streaming platform">
+</head>
+<body>
+  <div id="bgAnimation" class="bg-animation"></div>
+
+  <header class="header" id="header">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#" class="logo">🎬 StreamHub</a>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="steam.html">Movies</a></li>
+          <li><a href="#trending">Trending</a></li>
+          <li><a href="#popular">Popular</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search movies..." />
+          <button id="searchBtn" class="icon-btn">🔍</button>
+        </div>
+        <button id="watchlistBtn" class="icon-btn" title="Watchlist">❤️</button>
+        <button id="themeToggle" class="icon-btn" title="Toggle theme">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <img id="bannerImage" src="" alt="Banner" class="banner-img" />
+      <div class="banner-gradient"></div>
+      <div class="hero-info">
+        <div class="badges" id="heroBadges"></div>
+        <h1 id="heroTitle">Loading...</h1>
+        <p id="heroMeta" class="hero-meta"></p>
+        <p id="heroStory" class="hero-story"></p>
+        <div class="hero-actions">
+          <button id="watchNowBtn" class="btn btn-primary">▶ Watch Now</button>
+          <button id="addWatchlistBtn" class="btn btn-secondary">+ Watchlist</button>
+          <button id="copyLinkBtn" class="btn btn-secondary">🔗 Share</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="continue-watching" class="section">
+    <div class="container">
+      <h2 class="section-title">Continue Watching</h2>
+      <div class="cards-row" id="continueRow"></div>
+    </div>
+  </section>
+
+  <section id="trending" class="section">
+    <div class="container">
+      <h2 class="section-title">🔥 Trending Now</h2>
+      <div class="cards-row" id="trendingRow"></div>
+    </div>
+  </section>
+
+  <section id="popular" class="section">
+    <div class="container">
+      <h2 class="section-title">🔥 Popular Movies</h2>
+      <div class="cards-row" id="popularRow"></div>
+    </div>
+  </section>
+
+  <section id="new-releases" class="section">
+    <div class="container">
+      <h2 class="section-title">🎬 New Releases</h2>
+      <div class="cards-row" id="newReleasesRow"></div>
+    </div>
+  </section>
+
+  <section id="top-rated" class="section">
+    <div class="container">
+      <h2 class="section-title">⭐ Top Rated</h2>
+      <div class="cards-row" id="topRatedRow"></div>
+    </div>
+  </section>
+
+  <section id="recommended" class="section">
+    <div class="container">
+      <h2 class="section-title">✨ Recommended For You</h2>
+      <div class="cards-row" id="recommendedRow"></div>
+    </div>
+  </section>
+
+  <!-- Detail Section -->
+  <section id="movie-details" class="section" style="display: none;">
+    <div class="container">
+      <button id="backToList" class="btn btn-secondary">← Back to Browse</button>
+      <div class="detail-grid" style="margin-top: 1.5rem;">
+        <div class="detail-side">
+          <img id="detailPoster" src="" alt="Poster" class="detail-poster" />
+          <div class="action-buttons">
+            <button id="playBtn" class="btn btn-primary full-width">▶ Play Movie</button>
+            <button id="trailerBtn" class="btn btn-secondary full-width">🎬 Trailer</button>
+            <button id="streamBtn" class="btn btn-secondary full-width">📡 Sources</button>
+          </div>
+        </div>
+        <div class="detail-main">
+          <h1 id="movieTitle"></h1>
+          <h2 id="movieOriginalTitle"></h2>
+          <div class="meta-row">
+            <span id="movieYear" class="tag"></span>
+            <span id="movieQuality" class="tag quality"></span>
+            <span id="movieRuntime" class="tag"></span>
+            <span id="movieRating" class="tag rating"></span>
+            <span id="movieLanguage" class="tag"></span>
+          </div>
+          <p id="movieStory" class="story"></p>
+          <div class="info-grid">
+            <div><strong>Director</strong> <span id="movieDirector"></span></div>
+            <div><strong>Genres</strong> <span id="movieGenres"></span></div>
+            <div><strong>Cast</strong> <span id="movieCast"></span></div>
+            <div><strong>Writer</strong> <span id="movieWriter"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <button id="closeLightbox" class="lightbox-close">✕</button>
+    <img id="lightboxImg" src="" alt="Enlarged" />
+  </div>
+
+  <div id="sourcesModal" class="modal" style="display:none;">
+    <div class="modal-content glass">
+      <button class="close-btn modal-close">✕</button>
+      <h3>Streaming Sources</h3>
+      <div id="sourcesList"></div>
+    </div>
+  </div>
+
+  <div id="downloadsModal" class="modal" style="display:none;">
+    <div class="modal-content glass">
+      <button class="close-btn modal-close">✕</button>
+      <h3>Downloads</h3>
+      <div id="downloadsList"></div>
+    </div>
+  </div>
+
+  <button id="backToTop" class="back-to-top" style="display:none;">↑</button>
+  <div id="toastContainer" class="toast-container"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>🎬 StreamHub</h4>
+          <p>Premium movie streaming experience with the latest blockbusters and timeless classics.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="steam.html">Browse All Movies</a></li>
+            <li><a href="#trending">Trending Now</a></li>
+            <li><a href="#continue-watching">Continue Watching</a></li>
+            <li><a href="#popular">Popular Movies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect With Us</h4>
+          <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Discord</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2026 StreamHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json" id="structuredData"></script>
+  <script src="app.js"></script>
+</body>
+</html>

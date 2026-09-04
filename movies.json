@@ -180,7 +180,7 @@
         },
         {
           "label": "1080P",
-          "url": "#"
+          "url": "https://drive.usercontent.google.com/download?id=1CP-Js7N1eh6d0c8d-AAz3Ax5dzKynr8k&export=download&authuser=0&confirm=t&uuid=95f4f411-429e-463e-9898-fdd76e85d066&at=AMrWOn3f1K8kI0yCEzsz1GnR1YhH:1788540416677"
         },
         {
           "label": "720P",
@@ -250,7 +250,10 @@
       "driveLink": "https://drive.google.com/file/d/1KTQmCoG_75OdIHZ-gjXPbgiQMPY88L-0/view?usp=share_link",
       "telegramLink": "",
       "streamingLink": "",
-      "downloads": [],
+      "downloads": [{
+          "label": "1080P",
+          "url": "https://drive.usercontent.google.com/download?id=1KTQmCoG_75OdIHZ-gjXPbgiQMPY88L-0&export=download&authuser=0&confirm=t&uuid=115f3d40-9f78-4388-8986-ad0f9a60b51a&at=AMrWOn1kxxpYM0ITiC5fX2qJed3w:1788540260980"
+        },],
       "downloadCount": 19,
       "sources": [],
       "trailerURL": "https://www.youtube.com/watch?v=XXxUqLHq1xg",

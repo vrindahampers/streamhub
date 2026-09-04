@@ -9,18 +9,18 @@
   "topRated": [2],
   "recentlyAdded": [2, 1],
   "heroSettings": {
-    "autoPlay": false,
+    "autoPlay": true,
     "showInfo": true,
     "enableParallax": true
   },
   "playerSettings": {
     "defaultQuality": "auto",
-    "autoplay": false,
+    "autoplay": true,
     "showSkipButtons": true,
     "rememberPosition": true,
     "defaultSpeed": 1,
     "volumeBoost": true,
-    "maxVolume": 200,
+    "maxVolume": 400,
     "voiceControl": true,
     "keyboardShortcuts": true
   },
@@ -35,7 +35,7 @@
     "enableLazyLoad": true,
     "enableSkeleton": true,
     "defaultTheme": "dark",
-    "allowThemeToggle": true
+    "allowThemeToggle": false
   },
   "seoSettings": {
     "keywords": ["streaming", "movies", "watch online", "4k", "hdr"],
